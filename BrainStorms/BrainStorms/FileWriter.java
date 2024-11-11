@@ -25,8 +25,7 @@ class Write{
 			System.out.println(e.getMessage());
 		}catch(InterruptedException e1){
 			System.out.println(e1.getMessage());
-		}finally{
-			fr.close();
 		}
+		
 	}
 }
