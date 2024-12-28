@@ -1,24 +1,24 @@
-//Java program to find the factorial of a number 
+//java program to find the factoial of a number
 
-import java.util.Scanner;
-class Fact{
-	int fact=1,i=1;
-	public int find(int n){	
+class Fact {
+	private int n; 
+	private int i=1,fact=1;
+ 	Fact(int n){
+		this.n=n;
+	}
+
+	public int find_fact(){
 		while(i<=n){
 			fact*=i;
 			i++;
 		}
 		return fact;
 	}
+} 
+
+class Fact_run{
+public static void main(String...a){
+	Fact ob=new Fact(5);
+	System.out.println(ob.find_fact());
 }
-class Main{
-	public static void main(String...args){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter n : ");
-		int f=sc.nextInt();
-		Fact ob=new Fact();
-		int res=ob.find(f);
-		System.out.println("The factorial of "+f+" is "+res);
-	}
 }
-		
